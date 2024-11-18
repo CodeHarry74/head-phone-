@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container {
+    width: 40%;
+    height: 60%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#btn-1 {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.btn-2 {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(19, 26, 235);
+    color: white;
+    padding: 14px 120px;
+    box-shadow: 2px 5px 2px rgb(147, 147, 241);
+}
+
+.btn-3 {
+    border: 1.50px solid black;
+    padding: 11px 35px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px;
+
+}
+
+.div-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.minus-btn {
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.plus-btn {
+    width: 50px;
+    height: 30px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.reset-btn {
+    width: 70px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+@media only screen and (max-width : 2600px) {
+    .container {
+        width: 2000px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .container {
+        width: 600px;
+    }
+
+    .right {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .container {
+        width: 400px;
+    }
+
+    .right {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .btn-2 {
+        padding: 8px 40px;
+    }
+
+    .btn-3 {
+        padding: 5px 28px;
+    }
+
+    .box-4 {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .container {
+        width: 300px;
+    }
+
+    .right {
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .btn-2 {
+        padding: 2px 40px;
+    }
+
+    .btn-3 {
+        padding: 5px 8px;
+    }
+
+    .box-4 {
+        display: flex;
+        gap: 10px;
+    }
+}
